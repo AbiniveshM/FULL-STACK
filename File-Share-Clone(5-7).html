@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing App Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e9f0f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        display: flex;
+        width: 90%;
+        max-width: 1200px;
+        height: 80%;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .sidebar {
+        width: 60px;
+        background-color: #f5f7fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .sidebar ul li {
+        margin: 20px 0;
+    }
+    
+    .sidebar ul li a i {
+        font-size: 30px;
+        color: #000;
+    }
+    
+    .main-content {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .search-bar {
+        margin-bottom: 20px;
+    }
+    
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    .quick-access {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .quick-access-item {
+        text-align: center;
+        flex: 1;
+        margin: 0 10px;
+    }
+    
+    .quick-access-item i {
+        font-size: 50px;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    
+    .preview {
+        margin-bottom: 20px;
+    }
+    
+    .preview h5 {
+        margin-bottom: 10px;
+    }
+    
+    .preview-item {
+        display: inline-block;
+        width: 30%;
+        margin-right: 3.333%;
+    }
+    
+    .preview-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .downloads {
+        width: 300px;
+        background-color: #f5f7fa;
+        padding: 20px;
+        border-left: 1px solid #ccc;
+    }
+    
+    .downloads h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .download-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .download-item img {
+        width: 50px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    </style>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-folder"></i></a></li>
+                <li><a href="#"><i class="fas fa-download"></i></a></li>
+                <li><a href="#"><i class="fas fa-share"></i></a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search files...">
+            </div>
+            <div class="quick-access">
+                <div class="quick-access-item"><i class="fas fa-image"></i><p>Images</p></div>
+                <div class="quick-access-item"><i class="fas fa-music"></i><p>Music</p></div>
+                <div class="quick-access-item"><i class="fas fa-video"></i><p>Video</p></div>
+                <div class="quick-access-item"><i class="fas fa-file-alt"></i><p>Docs</p></div>
+                <div class="quick-access-item"><i class="fas fa-box"></i><p>Apps</p></div>
+                <div class="quick-access-item"><i class="fas fa-download"></i><p>Download</p></div>
+            </div>
+            <div class="preview">
+                <h5>Preview</h5>
+                <div class="preview-item"><img src="https://via.placeholder.com/300" alt="Preview"></div>
+                <div class="preview-item"><img src="https://via.placeholder.com/300" alt="Preview"></div>
+                <div class="preview-item"><img src="https://via.placeholder.com/300" alt="Preview"></div>
+            </div>
+        </main>
+        <aside class="downloads">
+            <h5>Downloads</h5>
+            <div class="download-item">
+                <img src="https://via.placeholder.com/50" alt="File">
+                <div>
+                    <p>File 1.mp4</p>
+                    <small>34.45 MB</small>
+                </div>
+            </div>
+            <div class="download-item">
+                <img src="https://via.placeholder.com/50" alt="File">
+                <div>
+                    <p>File 2.mp4</p>
+                    <small>45.78 MB</small>
+                </div>
+            </div>
+            <h5>File Received</h5>
+            <div class="download-item">
+                <img src="https://via.placeholder.com/50" alt="File">
+                <div>
+                    <p>Received 3 images</p>
+                    <small>50.3 MB</small>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
+
